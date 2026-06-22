@@ -1,0 +1,24 @@
+{
+  "originHash" : "417fd957519e02e1852a012c291c653699b5cb4a998f3980be2f412eee6bd24d",
+  "pins" : [
+    {
+      "identity" : "approuter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/atpugvaraa/AppRouter.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8c9d594da944db27c61ffcda46e9912fb3f96790"
+      }
+    },
+    {
+      "identity" : "nodejs.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/atpugvaraa/NodeJS.swift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "bb05ff0f2499e30ae190af3c07392e23fc0aa2ab"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -6,13 +6,58 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		774E4E8B2FD29B65005A0D31 /* nodejs-project in Resources */ = {isa = PBXBuildFile; fileRef = 774E4E8A2FD29B65005A0D31 /* nodejs-project */; };
+		774E4EAC2FD2CE22005A0D31 /* NodeJS in Frameworks */ = {isa = PBXBuildFile; productRef = 774E4EAB2FD2CE22005A0D31 /* NodeJS */; };
+		774E4ED32FD2FA4D005A0D31 /* AppRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 774E4ED22FD2FA4D005A0D31 /* AppRouter */; };
+		774E4F0A2FD324BF005A0D31 /* AppRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 774E4F092FD324BF005A0D31 /* AppRouter */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		774E4E982FD29C84005A0D31 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		774E4E8A2FD29B65005A0D31 /* nodejs-project */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "nodejs-project"; sourceTree = "<group>"; };
 		7786C56E2FB3285E0003CD18 /* ringo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ringo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		774E4ED92FD2FAB5005A0D31 /* Exceptions for "ringo" folder in "ringo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Features/Navigation/Route.swift,
+			);
+			target = 7786C56D2FB3285E0003CD18 /* ringo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		774E4EDA2FD2FAB5005A0D31 /* Exceptions for "ringo" folder in "Copy Bundle Resources" phase from "ringo" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 7786C56C2FB3285E0003CD18 /* Resources */;
+			membershipExceptions = (
+				Features/Navigation/Route.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7786C5702FB3285E0003CD18 /* ringo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				774E4ED92FD2FAB5005A0D31 /* Exceptions for "ringo" folder in "ringo" target */,
+				774E4EDA2FD2FAB5005A0D31 /* Exceptions for "ringo" folder in "Copy Bundle Resources" phase from "ringo" target */,
+			);
 			path = ringo;
 			sourceTree = "<group>";
 		};
@@ -23,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774E4F0A2FD324BF005A0D31 /* AppRouter in Frameworks */,
+				774E4EAC2FD2CE22005A0D31 /* NodeJS in Frameworks */,
+				774E4ED32FD2FA4D005A0D31 /* AppRouter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				7786C5702FB3285E0003CD18 /* ringo */,
+				774E4E8A2FD29B65005A0D31 /* nodejs-project */,
 				7786C56F2FB3285E0003CD18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +104,7 @@
 				7786C56A2FB3285E0003CD18 /* Sources */,
 				7786C56B2FB3285E0003CD18 /* Frameworks */,
 				7786C56C2FB3285E0003CD18 /* Resources */,
+				774E4E982FD29C84005A0D31 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -65,6 +115,9 @@
 			);
 			name = ringo;
 			packageProductDependencies = (
+				774E4EAB2FD2CE22005A0D31 /* NodeJS */,
+				774E4ED22FD2FA4D005A0D31 /* AppRouter */,
+				774E4F092FD324BF005A0D31 /* AppRouter */,
 			);
 			productName = ringo;
 			productReference = 7786C56E2FB3285E0003CD18 /* ringo.app */;
@@ -78,7 +131,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2640;
-				LastUpgradeCheck = 2640;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					7786C56D2FB3285E0003CD18 = {
 						CreatedOnToolsVersion = 26.4.1;
@@ -94,6 +147,10 @@
 			);
 			mainGroup = 7786C5652FB3285E0003CD18;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				774E4EAA2FD2CE22005A0D31 /* XCRemoteSwiftPackageReference "NodeJS.swift" */,
+				774E4F082FD324BF005A0D31 /* XCRemoteSwiftPackageReference "AppRouter" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7786C56F2FB3285E0003CD18 /* Products */;
 			projectDirPath = "";
@@ -109,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774E4E8B2FD29B65005A0D31 /* nodejs-project in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +219,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 3YK32DPS3W;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -184,6 +243,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -225,6 +285,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3YK32DPS3W;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -241,6 +302,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -255,6 +317,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3YK32DPS3W;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NodeMobile",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ringo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
@@ -263,7 +330,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +357,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3YK32DPS3W;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NodeMobile",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ringo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
@@ -298,7 +370,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +410,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		774E4EAA2FD2CE22005A0D31 /* XCRemoteSwiftPackageReference "NodeJS.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/atpugvaraa/NodeJS.swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		774E4F082FD324BF005A0D31 /* XCRemoteSwiftPackageReference "AppRouter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/atpugvaraa/AppRouter.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		774E4EAB2FD2CE22005A0D31 /* NodeJS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 774E4EAA2FD2CE22005A0D31 /* XCRemoteSwiftPackageReference "NodeJS.swift" */;
+			productName = NodeJS;
+		};
+		774E4ED22FD2FA4D005A0D31 /* AppRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppRouter;
+		};
+		774E4F092FD324BF005A0D31 /* AppRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 774E4F082FD324BF005A0D31 /* XCRemoteSwiftPackageReference "AppRouter" */;
+			productName = AppRouter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7786C5662FB3285E0003CD18 /* Project object */;
 }
